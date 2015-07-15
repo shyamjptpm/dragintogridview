@@ -1,0 +1,125 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="4dp"
+    tools:context="com.example.androidimageviewlist.MainActivity" >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:background="@android:color/background_dark"
+        android:orientation="horizontal" >
+
+
+        <com.example.androidimageviewlist.LinearLayoutGridView
+            android:id="@+id/member_list"
+            android:backgroundTint="@android:color/holo_blue_light"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="4dp"
+            android:layout_weight="1"
+            android:background="@android:color/background_light"
+            android:orientation="vertical"
+            android:visibility="visible">
+            <GridView
+                android:id="@+id/gridview1"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:columnWidth="90dp"
+                android:numColumns="1"
+                android:verticalSpacing="10dp"
+                android:horizontalSpacing="10dp"
+                android:stretchMode="columnWidth"
+                android:gravity="center"></GridView>
+        </com.example.androidimageviewlist.LinearLayoutGridView>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:weightSum="4"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+            <com.example.androidimageviewlist.LinearLayoutGridView
+                android:id="@+id/boat_back"
+                android:backgroundTint="@android:color/holo_red_dark"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.5"
+                android:background="@android:color/background_light"
+                android:orientation="vertical"
+                android:visibility="visible">
+                <GridView
+                    android:id="@+id/drummer_back"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:columnWidth="90dp"
+                    android:numColumns="1"
+                    android:verticalSpacing="10dp"
+                    android:horizontalSpacing="10dp"
+                    android:stretchMode="columnWidth"
+                    android:gravity="center"></GridView>
+            </com.example.androidimageviewlist.LinearLayoutGridView>
+            <com.example.androidimageviewlist.LinearLayoutGridView
+                android:id="@+id/boat"
+                android:backgroundTint="@android:color/holo_orange_light"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="3"
+                android:background="@android:color/background_light"
+                android:orientation="vertical"
+                android:visibility="visible">
+                <GridView
+                    android:id="@+id/gridview2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:columnWidth="90dp"
+                    android:numColumns="2"
+                    android:verticalSpacing="10dp"
+                    android:horizontalSpacing="10dp"
+                    android:stretchMode="columnWidth"
+                    android:gravity="center"></GridView>
+            </com.example.androidimageviewlist.LinearLayoutGridView>
+            <com.example.androidimageviewlist.LinearLayoutGridView
+                android:id="@+id/boat_front"
+                android:backgroundTint="@android:color/holo_red_light"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.5"
+                android:background="@android:color/background_light"
+                android:orientation="vertical"
+                android:visibility="visible">
+                <GridView
+                    android:id="@+id/drummer_front"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:columnWidth="90dp"
+                    android:numColumns="1"
+                    android:verticalSpacing="10dp"
+                    android:horizontalSpacing="10dp"
+                    android:stretchMode="columnWidth"
+                    android:gravity="center"></GridView>
+            </com.example.androidimageviewlist.LinearLayoutGridView>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/prompt"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/black"
+            android:gravity="bottom"
+            android:textColor="@android:color/white" />
+    </LinearLayout>
+
+</LinearLayout>
